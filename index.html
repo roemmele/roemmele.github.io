@@ -1,0 +1,173 @@
+<DOCTYPE html>
+<html>
+<head>
+<title>Melissa Roemmele</title>
+<link href="css/kraken.css" rel="stylesheet" type="text/css"/>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+<script>
+$(document).ready(function() {
+$(".aboutLink").on("click", function() {
+$(".section").hide();
+$("#about").show();
+$("#photo").show();
+});
+
+$(".researchLink").on("click", function() {
+$(".section").hide();
+$("#research").show();
+$("#photo").hide();
+});
+
+$(".cvLink").on("click", function() {
+// $(".section").hide();
+// $("#cv").show();
+// $("#photo").hide();
+window.open("publications/roemmele_CV.pdf")
+});
+});
+</script>
+</head>
+<body>
+
+<div id ="box">
+  <div id="header">
+    <span id = "name">Melissa Roemmele</span>
+  </div>
+  <div id = "content">
+    <img id="photo" src = "images/factual_headshot.jpg"/>
+    <div id="about" class="section">
+      <p>
+      The Institute for Creative Technologies<br />
+      University of Southern California<br />
+      12015 Waterfront Drive<br />
+      Los Angeles, CA 90094<br/>
+      roemmele @ ict . usc . edu <br/>
+      </p>
+      <p>
+        I'm a recent PhD graduate of the <a
+        href="http://www.cs.usc.edu/" target="_blank">Department of Computer
+        Science</a> at University of
+        Southern California, currently seeking new job opportunities involving innovative applications of natural language processing. In February 2018, I defended my thesis ''Neural Networks for Narrative Continuation'', which explores machine learning approaches to automatically predicting 'what happens next' in text-based stories (see the <a target="_blank" href="publications/abstract_short.pdf">one-page abstract</a> or the <a target="_blank" href="publications/dissertation.pdf">full text</a>). Since 2012, I've worked as a research assistant in the <a href="http://narrative.ict.usc.edu/" target="_blank">Narrative Group</a> led by my advisor <a href="http://ict.usc.edu/~gordon" target="_blank">Andrew Gordon</a> at the <a href="http://ict.usc.edu" target="_blank">USC Institute for Creative Technologies</a>, where we pursue artificial intelligence for applications related to storytelling. Before coming to USC, I completed a Master's degree in <a href="http://cl.indiana.edu/" target="_blank">Computational Linguistics</a> at Indiana University. As an undergraduate I studied Psychology and Linguistics at Miami University, where I was also part of the <a href="http://www.miamiredhawks.com/sports/c-swim/mioh-c-swim-body.html" target="_blank">Diving</a> team.
+      </p>
+      <p>
+        View my <a href="javascript:void(0)" class="cvLink">CV/Resume</a>, my <a href="https://www.linkedin.com/in/mroemmele/" target="_blank">LinkedIn</a>, and my <a href="https://github.com/roemmele" target="_blank">GitHub</a>.
+      </p>
+    </div>
+    <div id="code" class="section">
+      <p class="section_heading">Projects/Code</p>
+      <ul>
+        <li>
+          Check out our app for creative story writing assistance, <a target="_blank" href="https://fiction.ict.usc.edu/creativehelp/">Creative Help</a>.
+        <li>
+          I put together some iPython notebook tutorials on <a target="_blank" href="https://github.com/roemmele/keras-rnn-demo">GitHub</a> about how to use Keras to build simple RNNs for language processing tasks.
+        </li>
+      </ul>
+    </div>
+    <div id="research" class="section">
+      <p class="section_heading">Publications <span style="color:black; font-size:0.85em; font-weight: normal;">(also on <a target="_blank" href="https://scholar.google.com/citations?user=l_nZmdkAAAAJ&hl=en">Google Scholar</a>)</span>.</p>
+      <ul id="publications">
+        <li>
+        Roemmele, M. and Gordon, A. (2018) Linguistic Features of Helpfulness in Automated Support for Creative Writing. Storytelling Workshop at the 16th Annual Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL 2018). <a target="_blank" href ="publications/creative-help-evaluation.pdf">pdf</a>
+        </li>
+        <li>
+        Roemmele, M. and Gordon, A. (2018) An Encoder-decoder Approach to Predicting Causal Relations in Stories. Storytelling Workshop at the 16th Annual Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL 2018). <a target="_blank" href ="publications/copa.pdf">pdf</a>
+        </li>
+        <li>
+        Roemmele, M. (2018) Neural Networks for Narrative Continuation. PhD Thesis. University of Southern California. <a target="_blank" href ="publications/dissertation.pdf">pdf</a>
+        </li>
+        <li>
+        Roemmele, M. and Gordon, A. (2018) Automated Assistance for Creative Writing with an RNN Language Model. Demo at the 2018 International Conference on Intelligent User Interfaces (IUI 2018). <a target="_blank" href ="publications/creative-help-demo.pdf">pdf</a>
+        </li>
+        <li>
+          Roemmele, M. and Gordon, A. (2017) Lexical preferences in an automated story writing system. Workshop on Machine Learning for Creativity and Design, at the Thirty-First Annual Conference on Neural Information Processing Systems (NIPS 2017). <a target="_blank" href ="publications/creative-help-analysis.pdf">pdf</a>
+        <li>
+          Cychosz, M., Gordon, A., Odimegwu, O., Connolly, O., Bellassai, J., Roemmele, M. (2017) Effective Scenario Designs for Free-text Interactive Fiction. 10th International Conference on Interactive Digital Storytelling (ICIDS-2017). <a target="_blank" href ="publications/ICIDS17.pdf">pdf</a>
+        </li>
+        <li>
+          Bellassai, J., Gordon, A., Roemmele, M., Cychosz, M., Odimegwu, O., and Connolly, O. (2017) Unsupervised Text Classification for Natural Language Interactive Narratives. Proceedings of the 10th International Workshop on Intelligent Narrative Technologies (INT10). <a target="_blank" href ="publications/INT17A.PDF">pdf</a>
+        </li>
+        <li>
+          Roemmele, M., Gordon, A., and Swanson, R. (2017) Evaluating Story Generation Systems Using Automated Linguistic Analyses. Workshop on Machine Learning for Creativity, at the 23rd SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2017). <a target="_blank" href ="publications/fiction_generation.pdf">pdf</a>
+        </li>
+        <li>
+          Roemmele, M., Mardo, P., and Gordon, A. (2017) Natural-language Interactive Narratives in Imaginal Exposure Therapy for Obsessive-Compulsive Disorder. Computational Linguistics and Clinical Psychology Workshop (CLPsych), at the 2017 Annual Meeting of the Association for Computational Linguistics (ACL 2017). <a target="_blank" href ="publications/dine-for-ocd.pdf">pdf</a>
+        </li>
+      <li>
+      Roemmele, M., Kobayashi, S., Inoue, N., and Gordon, A. (2017) An RNN-based Binary Classifier for the Story Cloze Test. Linking Models of Lexical, Sentential and Discourse-level Semantics Workshop (LSDSem), at the 2017 European Chapter of the Association for Computational Linguistics (EACL 2017). <a target="_blank" href ="publications/eacl2017_storyclozetest_cameraready.pdf">pdf</a>
+      </li>
+      <li>
+      (Blog post) Roemmele, M. and Heilman, M. (2016) Interpreting and Visualizing Neural Networks for Text Processing. <a target="_blank" href="https://www.civisanalytics.com/">Civis Analytics</a>. <a target="_blank" href ="https://www.civisanalytics.com/blog/interpreting-visualizing-neural-networks-text-processing/">html</a>
+    </li>
+      <li>
+      Roemmele, M., Morgens, S., Gordon, A., and Morency, L. (2016) Recognizing Human Actions in the Motion Trajectories of Shapes. 2016 International Conference on Intelligent User Interfaces (IUI 2016). <a target="_blank" href ="publications/iui16.pdf">pdf</a>
+      </li>
+      <li>
+      Roemmele, M. (2016) Writing Stories with Help from Recurrent Neural Networks. Doctoral Consortium at the Thirtieth AAAI Conference on Artificial Intelligence (AAAI-16). <a target="_blank" href ="publications/aaai_dc2016_roemmele.pdf">pdf</a>
+      </li>
+      <li>
+      Roemmele, M. and Gordon, A. (2015) Creative Help: A Story Writing Assistant. Eighth International Conference on Interactive Digital Storytelling (ICIDS-2015). <a target="_blank" href ="publications/ICIDS15.PDF">pdf</a>
+      </li>
+      <li>
+      Maslan, N., Roemmele, M., and Gordon, A. (2015) One Hundred Challenge Problems for Logical Formalizations of Commonsense Psychology. Twelfth International Symposium on Logical Formalizations of Commonsense Reasoning (Commonsense-2015). <a target="_blank" href ="publications/AAAI-SPRING15.PDF">pdf</a>
+      </li>
+      <li>
+      Maslan, N., Roemmele, M., and Gordon, A. (2015) An Integrated Evaluation of Perception, Interpretation, and Narration. Beyond the Turing Test Workshop, at the 29th AAAI Conference on Artificial Intelligence (AAAI-15). <a target="_blank" href ="publications/AAAI-WS15.PDF">pdf</a>
+      </li>
+      <li>
+      Gordon, A. and Roemmele, M. (2014) An Authoring Tool for Movies in the Style of Heider and Simmel. Seventh International Conference on Interactive Digital Storytelling (ICIDS-2014). <a target="_blank" href ="publications/ICIDS14.PDF">pdf</a>
+      </li>
+      <li>Roemmele, M., Archer-McClellan, H., and Gordon, A. (2014) Triangle Charades: A Data-Collection Game for Recognizing Actions in Motion Trajectories. 2014 International
+      Conference on Intelligent User Interfaces (IUI 2014). <a target="_blank" href ="publications/IUI14.pdf">pdf</a>
+      </li>
+      <li>Wienberg, C., Roemmele, M., and Gordon, A. (2013) Content-Based Similarity Measures of Weblog Authors. The 4th Annual ACM Web Science Conference (WebSci'13). <a target="_blank" href ="publications/WebSci2013.pdf">pdf</a>
+      </li>
+      <li>
+      Gordon, A., Kozareva, Z., and Roemmele, M. (2012) SemEval-2012 Task 7: Choice of Plausible Alternatives: An Evaluation of Commonsense Causal Reasoning. 6th International Workshop on Semantic Evaluation (SemEval 2012), at the 2012 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT 2012). <a target="_blank" href ="publications/SEMEVAL12.PDF">pdf</a>
+      </li>
+      <li>
+      Roemmele, M., Bejan, C., and Gordon, A. (2011) Choice of Plausible Alternatives: An Evaluation of Commonsense Causal Reasoning. Tenth International Symposium on Logical Formalizations of Commonsense Reasoning (Commonsense-2011). <a target="_blank" href ="publications/AAAI-SPRING11A.PDF">pdf</a>
+      </li>
+    </ul>
+    </div>
+<!--     <div id="cv" class="section">
+      Download <a href="cv.pdf">pdf version.</a>
+
+      <h2>Education</h2>
+      <ul id="education">
+      <li>
+      Ph.D. May 2017 (expected completion)
+      Computer Science, cumulative GPA 3.74/4.0 University of Southern California, Los Angeles, CA
+      </li>
+      <li>
+      M.A.  December 2010
+      Computational Linguistics, cumulative GPA 4.0/4.0 Indiana University, Bloomington, IN
+      </li>
+      <li>
+      B.A., Summa Cum Laude   May 2009
+      Linguistics and Psychology, cumulative GPA 3.95/4.0   Miami University, Oxford, OH
+      </li>
+      </ul>
+
+      <h2>Experience</h2>
+      <ul id="experience">
+      Graduate Research Assistant August 2012 - present
+      Institute for Creative Technologies, University of Southern California  Los Angeles, CA
+      My research generally involves artificial intelligence for applications related to storytelling. Currently, I’m focusing on natural language processing applied to narrative text, both for the purpose of better understanding how people tell stories as well as incorporating this understanding into machine intelligence. 
+      FileMaker Developer November 2011 - July 2012
+      Database Development Services Indianapolis, IN
+      I used FileMaker, a rapid application development tool for relational databases, to develop database applications for various businesses. 
+      Computational Linguist  September 2010 - April 2011
+      Rivera Consulting Group       Sellersburg, IN
+      I worked on a system for automatically detecting the topical content of internet weblogs using natural language processing tools.
+      Research Intern June 2010 - August 2010
+      Institute for Creative Technologies, University of Southern California  Los Angeles, CA
+      I designed an evaluation metric for artificial intelligence systems that perform “common sense” reasoning from natural language text.
+      </ul>
+
+    </div> -->
+  </div>
+</div>
+
+</body>
+</html>
