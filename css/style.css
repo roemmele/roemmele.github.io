@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'latin_modern_roman_caps10Rg';
+    font-family: 'fonts/latin_modern_roman_caps10Rg';
     src: url('fonts/lmromancaps10-regular-webfont.eot');
     src: url('fonts/lmromancaps10-regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('fonts/lmromancaps10-regular-webfont.woff') format('woff'),
@@ -11,7 +11,7 @@
 }
 
 @font-face {
-    font-family: 'latin_modern_roman10_regular';
+    font-family: 'fonts/latin_modern_roman10_regular';
     src: url('fonts/lmroman10-regular-webfont.eot');
     src: url('fonts/lmroman10-regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('fonts/lmroman10-regular-webfont.woff') format('woff'),
@@ -28,21 +28,16 @@ body,html {
     height:100%;
     margin:0%;
     padding:0%;
-/*    color:#A80314*/
     color:black;
-    /*box-sizing: border-box;*/
 }
 
 div#box {
-/*    border:15px solid #FFE9C7;
-    border:15px solid #DEDAD2;*/
     border:2px solid #A80314;
     border-radius:10px;
     margin-top:5%;
     margin-bottom:5%;
     margin-right:15%;
     margin-left:15%;
-/*    background-color:#FFE9C7;*/
     background-color:#DEDAD2;
 }
 
@@ -50,18 +45,11 @@ div#header {
     font-family: 'fonts/latin_modern_roman_caps10Rg' 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-variant: small-caps;
     font-weight:bold;
-/*    background-color:#FF5B5B;
-    background-color:#B91924;
-    background-color:#D9424C;*/
     background-color:#A80314;
     max-height:10em;
     margin:0;
     width:100%;
-/*    color:#A80314;*/
     color:#DEDAD2;
-/*    border-top-right-radius:10px;
-    border-top-left-radius:10px;*/
-/*    #border-bottom: 0px solid #545454;*/
     border-bottom: 2px solid #A80314;
 }
 
@@ -73,13 +61,11 @@ span#name {
 }
 
 div#menu {
-/*    position:relative;*/
     margin-left:1%;
     display:inline-block;
     text-align:right;
     width:25%;
     white-space:nowrap;
-/*    overflow:hidden;*/
     font-size:1.25em;
 }
 
@@ -90,43 +76,21 @@ span.menuItem {
 }
 
 div#content {
-/*    background-color: #70E8CB;
-    background-color:#81BCCA;
-    background-color:#A2A5B1;*/
-/*    background-color:white;*/
     display:inline-block;
     width:100%;
     border-bottom-right-radius:10px;
     border-bottom-left-radius:10px;
     font-size:1.12em;
-/*    min-height:30em;*/
 }
 
 img#photo {
-/*    display:inline-block;*/
     float:left;
-    /*width:22%;*/
     width:auto;
     height:39%;
-/*    border-bottom-left-radius:10px;*/
     padding-top:2%;
     padding-right:2%;
     padding-left:2%;
-/*    padding-bottom:2%;*/
 }
-
-#research {
-/*    display:none;*/
-    float:left;
-}
-
-#cv {
-/*    display:none;*/
-}
-
-/*ul#publications {
-    padding-bottom:50px;
-}*/
 
 p.section_heading {
     color: #A80314;
@@ -140,19 +104,13 @@ div.section {
     margin:2%
 }
 
-a:link, a:hover
-{
-/*color: #FF5B5B;
-color: #D9424C;*/
-color: #A80314;
-font-weight: bold;
+a:link, a:hover {
+    color: #A80314;
+    font-weight: bold;
 }
 
-a:visited
-{
-/*color: #FF5B5B;
-color: #D9424C;*/
-color: #A80314;
+a:visited {
+    color: #A80314;
 }
 
 ul {
