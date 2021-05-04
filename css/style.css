@@ -32,25 +32,25 @@ body,html {
 }
 
 div#box {
-    border:2px solid #00695cff; /*#A80314*/;
+    border:2px solid #015248ff; /*#A80314*/;
     border-radius:10px;
     margin-top:5%;
     margin-bottom:5%;
     margin-right:15%;
     margin-left:15%;
-    background-color:#DEDAD2;
+    background-color: #fffbf0ff; /*#DEDAD2*/;
 }
 
 div#header {
     font-family: 'fonts/latin_modern_roman_caps10Rg' 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-variant: small-caps;
     font-weight:bold;
-    background-color:#00695cff;/*#A80314*/;
+    background-color:#015248ff;/*#A80314*/;
     max-height:10em;
     margin:0;
     width:100%;
-    color:#DEDAD2;
-    border-bottom: 2px solid #00695cff; /*#A80314*/;
+    color: #fffbf0ff; /*#DEDAD2*/;
+    border-bottom: 2px solid #015248ff; /*#A80314*/;
 }
 
 span#name {
@@ -93,7 +93,7 @@ img#photo {
 }
 
 p.section_heading {
-    color: #00695cff; /*#A80314*/;
+    color: #015248ff; /*#A80314*/;
     font-weight:bold;
     margin-bottom:1px;
     font-size:1.2em;
@@ -105,12 +105,12 @@ div.section {
 }
 
 a:link, a:hover {
-    color: #00695cff /*#A80314*/;
+    color: #015248ff; /*#A80314*/;
     font-weight: bold;
 }
 
 a:visited {
-    color: #00695cff /*#A80314*/;
+    color: #015248ff; /*#A80314*/;
 }
 
 ul {
